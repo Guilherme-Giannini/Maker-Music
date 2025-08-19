@@ -8,37 +8,33 @@ export const style = StyleSheet.create({
   },
   boxtop: {
     height: Dimensions.get('window').height/3,
-    backgroundColor: 'red',
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo: {
-    marginTop: 50,
+    marginTop: 100,
     width: 80,
     height: 80,
     resizeMode: 'contain',
   },
   text: {
     fontSize: 20,
-    fontWeight: 'bold',
     marginTop: 40,
     alignSelf: 'center',
   },
   boxmid: {
     height: 'auto',
-    backgroundColor: 'green',
     width: '100%'
   },
   boxbottom: {
     height: Dimensions.get('window').height/3,
-    backgroundColor: 'blue',
     width: '100%',
   },
   emailInput: {
     height: 50,
-    borderColor: 'white',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     borderRadius: 10,
     marginLeft: 50,
     marginRight: 50,
@@ -51,8 +47,8 @@ export const style = StyleSheet.create({
   },
   senhaInput: {
     height: 50,
-    borderColor: 'white',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     borderRadius: 10,
     marginLeft: 50,
     marginRight: 50,
@@ -68,6 +64,8 @@ export const style = StyleSheet.create({
     marginLeft: 100,
     marginRight: 100,
     backgroundColor: 'white',
+    borderWidth: 2,
+    borderColor: 'black',
     borderRadius: 10,
     height: 50,
   },
@@ -78,5 +76,10 @@ export const style = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
     lineHeight: 50,
+  },
+  forget: {
+    marginTop: 170,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
