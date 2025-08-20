@@ -7,7 +7,7 @@ import AdminScreen from './src/pages/AdminScreen/AdminScreen';
 import HomeScreen from './src/pages/HomeScreen/HomeScreen';
 import TeacherScreen from './src/pages/TeacherScreen/TeacherScreen';
 
-// Tipagem das rotas
+
 export type RootStackParamList = {
   Login: undefined;
   AdminScreen: undefined;

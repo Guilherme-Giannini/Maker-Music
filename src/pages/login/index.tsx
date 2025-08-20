@@ -121,7 +121,7 @@ export default function Login() {
 
       <View style={style.boxbottom}>
         <TouchableOpacity style={style.forget} onPress={handleForget}>
-          <Text style={[style.buttonText, { fontFamily: "BebasNeue_400Regular" }]}>
+          <Text style={[style.forgetText, { fontFamily: "BebasNeue_400Regular" }]}>
             Esqueci a senha
           </Text>
         </TouchableOpacity>
