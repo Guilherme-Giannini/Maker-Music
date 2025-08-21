@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Alert,
 } from "react-native";
-import { useNavigation, NavigationProp } from "@react-navigation/native"; // Ajuste aqui
+import { useNavigation, NavigationProp } from "@react-navigation/native"; 
 import { useFonts, BebasNeue_400Regular } from "@expo-google-fonts/bebas-neue";
 import Logo from "../../assets/logo.png";
 import { style } from "./style";

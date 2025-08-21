@@ -5,6 +5,16 @@ import { View,
         } 
 from "react-native";
 import { style } from "./style";
+import { useNavigation, NavigationProp } from "@react-navigation/native"; 
+
+
+type RootStackParamList = {
+  Login: undefined;
+  AdminScreen: undefined;
+  HomeScreen: undefined;
+  TeacherScreen: undefined;
+};
+
 
 const handleHomework = () => {
  //acrescentar a lógica para navegar para a tela de Tarefas
@@ -22,12 +32,16 @@ const handleHorarios = () => {
  //acrescentar a lógica para navegar para a tela de Horários
   console.log("Navegando para Horários");
 }
-const handleExit = () => {
- //acrescentar a lógica para sair para o Login
-  console.log("Saindo do aplicativo");
-}
+
 
 export default function HomeScreen() {
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  
+    const handleExit = () => {
+    navigation.navigate("Login"); 
+    console.log("Saindo do aplicativo");
+  }
+
   return (
     <View style={style.container}>
 
