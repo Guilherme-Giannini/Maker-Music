@@ -13,23 +13,24 @@ type RootStackParamList = {
   AdminScreen: undefined;
   HomeScreen: undefined;
   TeacherScreen: undefined;
+  Tarefas: undefined;
 };
 
 
 const handleHomework = () => {
- //acrescentar a lógica para navegar para a tela de Tarefas
+
   console.log("Navegando para Tarefas");
 }
 const handleChat = () => {
- //acrescentar a lógica para navegar para a tela de Chat
+ 
   console.log("Navegando para Chat com o Professor");
 }
 const handleFinanceiro = () => {
- //acrescentar a lógica para navegar para a tela de Financeiro
+
   console.log("Navegando para Financeiro");
 }
 const handleHorarios = () => {
- //acrescentar a lógica para navegar para a tela de Horários
+
   console.log("Navegando para Horários");
 }
 
@@ -41,6 +42,13 @@ export default function HomeScreen() {
     navigation.navigate("Login"); 
     console.log("Saindo do aplicativo");
   }
+
+  const handleHomework = () => {
+
+  console.log("Navegando para Tarefas");
+  navigation.navigate("Tarefas"); 
+    console.log("indo ao painel de tarefas");
+}
 
   return (
     <View style={style.container}>

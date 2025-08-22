@@ -6,6 +6,7 @@ import Login from './src/pages/login/index';
 import AdminScreen from './src/pages/AdminScreen/AdminScreen';
 import HomeScreen from './src/pages/HomeScreen/HomeScreen';
 import TeacherScreen from './src/pages/TeacherScreen/TeacherScreen';
+import Tarefas from './src/pages/HomeScreen/Tarefas';
 
 
 export type RootStackParamList = {
@@ -13,6 +14,7 @@ export type RootStackParamList = {
   AdminScreen: undefined;
   HomeScreen: undefined;
   TeacherScreen: undefined;
+  Tarefas: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -25,6 +27,7 @@ export default function App() {
         <Stack.Screen name="AdminScreen" component={AdminScreen} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="TeacherScreen" component={TeacherScreen} />
+        <Stack.Screen name="Tarefas" component={Tarefas}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

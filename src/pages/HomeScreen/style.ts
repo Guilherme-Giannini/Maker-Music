@@ -1,14 +1,17 @@
 import { StyleSheet } from 'react-native'; 
 
 export const style = StyleSheet.create({
+  //========================
+  // Sessão Menu Principal
+  //========================
   container: {
     flex: 1,
     backgroundColor: '#1c1b1f', // fundo quase preto com tom quente
   },
   top: {
     backgroundColor: '#bfa04f', // dourado elegante
-    paddingBottom: 25,
     paddingTop: 50,
+    paddingBottom: 25,
     borderBottomWidth: 2,
     borderBottomColor: '#1c1b1f',
   },
@@ -41,7 +44,7 @@ export const style = StyleSheet.create({
   },
   buttonText: {
     color: '#1c1b1f', // contraste escuro
-    fontSize: 18,   
+    fontSize: 18,
     textAlign: 'center',
     fontWeight: 'bold',
   },
@@ -62,5 +65,33 @@ export const style = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     fontWeight: 'bold',
+  },
+
+  //========================
+  // Sessão Screen Tarefas
+  //========================
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    marginTop: 80,
+    fontFamily: 'BebasNeue_400Regular',
+    textAlign: 'center',
+    color: '#f6e27f',
+  },
+  todoItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10,
+    borderBottomWidth: 1,
+    borderColor: '#f6e27f',
+    alignItems: 'center',
+  },
+  todoText: {
+    color: '#e0d9c0', // cor dos itens não concluídos
+  },
+  completed: {
+    textDecorationLine: 'line-through',
+    color: '#f6e27f', // cor dos itens concluídos
   },
 });
