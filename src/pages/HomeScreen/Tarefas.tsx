@@ -23,7 +23,7 @@ export default function Todo() {
 
   const [todos, setTodos] = useState<TodoItem[]>([
     { id: 1, text: 'Praticar escala C#', completed: false },
-    { id: 2, text: 'Exercicio 05 do capito 7 da apostila', completed: true },
+    { id: 2, text: 'Exercicio 05 do capítulo 7 da apostila', completed: true },
     { id: 3, text: 'Praticar Musica Nova', completed: false },
   ]);
 

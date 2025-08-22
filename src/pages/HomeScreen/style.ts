@@ -89,9 +89,109 @@ export const style = StyleSheet.create({
   },
   todoText: {
     color: '#e0d9c0', // cor dos itens não concluídos
+    fontFamily: "BebasNeue_400Regular"
   },
   completed: {
     textDecorationLine: 'line-through',
     color: '#f6e27f', // cor dos itens concluídos
   },
+  //========================
+  // Sessão Screen horarios
+  //========================
+  item: {
+    padding: 12,
+    marginVertical: 6,
+    borderBottomWidth: 1,
+    borderColor: '#f6e27f',
+    backgroundColor: '#1c1b1f',
+    borderRadius: 8,
+  },
+  info: {
+    flexDirection: 'row',
+    marginBottom: 4,
+  },
+  label: {
+    fontWeight: 'bold',
+    color: '#f6e27f',
+    fontFamily: 'BebasNeue_400Regular',
+    width: 70,
+  },
+  textSala: {
+    color: '#e0d9c0',
+    fontFamily: 'BebasNeue_400Regular',
+  },
+  textHorario: {
+    color: '#f6e27f',
+    fontFamily: 'BebasNeue_400Regular',
+  },
+  //========================
+  // Sessão Screen Chat
+  //========================
+  mensagem: {
+    maxWidth: '70%',
+    padding: 10,
+    marginVertical: 4,
+    borderRadius: 10,
+  },
+  aluno: {
+    backgroundColor: '#d4af37',
+    alignSelf: 'flex-end',
+  },
+  professor: {
+    backgroundColor: '#d4af37', 
+    borderWidth: 1,
+    borderColor: '#f6e27f',
+    alignSelf: 'flex-start',
+  },
+  texto: {
+    color: '#1c1b1f',
+    fontFamily: 'BebasNeue_400Regular',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    padding: 10,
+    borderTopWidth: 1,
+    borderColor: '#f6e27f',
+    paddingBottom: 50,
+  },
+  input: {
+    flex: 1,
+    backgroundColor: '#2a292c',
+    color: '#e0d9c0',
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    marginRight: 8,
+    fontFamily: 'BebasNeue_400Regular',
+  },
+  botao: {
+    backgroundColor: '#f6e27f',
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    justifyContent: 'center',
+  },
+  botaoTexto: {
+    fontFamily: 'BebasNeue_400Regular',
+    fontWeight: 'bold',
+    color: '#1c1b1f',
+  },
+
+  backButton: {
+    position: 'absolute',
+    top: 50,
+    left: 20,
+    zIndex: 1,
+    padding: 6,
+  },
+  backText: {
+    color: '#f6e27f',
+    fontSize: 18,
+    fontFamily: 'BebasNeue_400Regular',
+  },
+
+  //========================
+  // Sessão Screen Financeiro
+  //========================
+
+
+      //Não tem :/ foi reaproveitado das outras sessões
 });

@@ -14,41 +14,43 @@ type RootStackParamList = {
   HomeScreen: undefined;
   TeacherScreen: undefined;
   Tarefas: undefined;
+  Horarios: undefined;
+  Chat: undefined;
+  Financeiro: undefined;
 };
-
-
-const handleHomework = () => {
-
-  console.log("Navegando para Tarefas");
-}
-const handleChat = () => {
- 
-  console.log("Navegando para Chat com o Professor");
-}
-const handleFinanceiro = () => {
-
-  console.log("Navegando para Financeiro");
-}
-const handleHorarios = () => {
-
-  console.log("Navegando para Horários");
-}
 
 
 export default function HomeScreen() {
     const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+
+    const handleChat = () => {
+ 
+      navigation.navigate("Chat")
+      console.log("Navegando para Chat com o Professor");
+}
   
     const handleExit = () => {
-    navigation.navigate("Login"); 
-    console.log("Saindo do aplicativo");
+      navigation.navigate("Login"); 
+      console.log("Saindo do aplicativo");
   }
 
   const handleHomework = () => {
 
-  console.log("Navegando para Tarefas");
-  navigation.navigate("Tarefas"); 
+    navigation.navigate("Tarefas"); 
     console.log("indo ao painel de tarefas");
 }
+
+const handleHorarios = () => {
+
+  navigation.navigate("Horarios")
+  console.log("Navegando para Horários");
+}
+const handleFinanceiro = () => {
+
+  navigation.navigate("Financeiro")
+  console.log("Navegando para Financeiro");
+};
+
 
   return (
     <View style={style.container}>
